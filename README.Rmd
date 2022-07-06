@@ -1,0 +1,46 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Open Data - DATAN
+
+Ce repo contient certaines données publiques utilisées par le site de vulgarisation parlementaire [Datan](https://www.resultats-elections.interieur.gouv.fr/legislatives-2022/index.html).
+
+## Élections législatives
+
+Les fichiers contiennent les données pour les élections législatives françaises suivantes : 2017 et 2022.
+
+Ces données sont issues des données publiques du ministère de l'Intérieur [publiées sur le site Data Gouv](https://www.data.gouv.fr/fr/pages/donnees-des-elections/).
+
+- circo_infos
+
+Ce jeu de données contient les informations électorales concernant les circonscriptions.
+
+```{r}
+dplyr::glimpse(readr::read_rds("elections/legislatives/circo_infos.rds"))
+```
+
+- circo_results
+
+Ce jeu de données contient les résultats par circonscription.
+
+```{r}
+dplyr::glimpse(readr::read_rds("elections/legislatives/circo_results.rds"))
+```
+
+- cities
+
+Ce jeu de données contient les résultats par commune.
+
+```{r}
+dplyr::glimpse(readr::read_rds("elections/legislatives/cities.rds"))
+```
