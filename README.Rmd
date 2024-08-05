@@ -39,7 +39,7 @@ dplyr::glimpse(readr::read_rds("elections/legislatives/circo_results.rds"))
 
 - *cities.rds*
 
-Ce jeu de données contient les résultats par commune. Il n'existe pas en CSV car trop lourd.
+Ce jeu de données contient les résultats par commune.
 
 ```{r}
 dplyr::glimpse(readr::read_rds("elections/legislatives/cities.rds"))
