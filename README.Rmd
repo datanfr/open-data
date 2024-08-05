@@ -17,7 +17,7 @@ Ce repo contient certaines données publiques utilisées par le site de vulgaris
 
 ## Élections législatives
 
-Les fichiers contiennent les données pour les élections législatives françaises suivantes : 2017 et 2022.
+Les fichiers contiennent les données pour les élections législatives françaises suivantes : 2017, 2022 et 2024.
 
 Ces données sont issues des données publiques du ministère de l'Intérieur [publiées sur le site Data Gouv](https://www.data.gouv.fr/fr/pages/donnees-des-elections/).
 
@@ -39,7 +39,7 @@ dplyr::glimpse(readr::read_rds("elections/legislatives/circo_results.rds"))
 
 - *cities.rds*
 
-Ce jeu de données contient les résultats par commune.
+Ce jeu de données contient les résultats par commune. Il n'existe pas en CSV car trop lourd.
 
 ```{r}
 dplyr::glimpse(readr::read_rds("elections/legislatives/cities.rds"))
